@@ -8,5 +8,14 @@ namespace OOP1
 {
     class AClass1
     {
+        public AClass1():this(222)
+        {
+            Console.WriteLine("Class1()");
+        }
+        public AClass1(int i)
+        {
+            Console.Write("Class1(i) i= " + i);
+            Console.WriteLine();
+        }
     }
 }

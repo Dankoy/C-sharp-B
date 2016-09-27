@@ -10,7 +10,8 @@ namespace OOP1
     {
         static void Main(string[] args)
         {
-
+            AClass1 acl1 = new AClass1();
+            AClass1 acl2 = new AClass1(454);
         }
     }
 }
