@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace StaticThings
 {
-    class Program
+    public class AClass1
     {
-        static void Main(string[] args)
+        public static string M1()
         {
-            AClass1.M1();
+            throw new System.NotImplementedException();
         }
     }
 }
