@@ -9,7 +9,8 @@ namespace StaticThings
     {
         public static string M1()
         {
-            throw new System.NotImplementedException();
+            System.DateTime dateTime = new System.DateTime(DateTime.Now.Ticks);
+            return null;
         }
     }
 }
