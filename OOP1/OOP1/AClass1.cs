@@ -8,7 +8,14 @@ namespace OOP1
 {
     class AClass1
     {
-        public AClass1():this(222)
+        /// <summary>
+        /// variable i1
+        /// </summary>
+        public int i1;
+        public const int i2 = 111;
+
+        public AClass1()
+            : this(222)
         {
             Console.WriteLine("Class1()");
         }
@@ -16,6 +23,11 @@ namespace OOP1
         {
             Console.Write("Class1(i) i= " + i);
             Console.WriteLine();
+        }
+        public int a_Summa(ref int _i1, int _i2)
+        {
+            _i1++;
+            return _i1 + _i2;
         }
     }
 }
