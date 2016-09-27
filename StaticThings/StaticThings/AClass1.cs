@@ -10,7 +10,8 @@ namespace StaticThings
         public static string M1()
         {
             System.DateTime dateTime = new System.DateTime(DateTime.Now.Ticks);
-            return null;
+            System.Console.WriteLine("{0:d}", dateTime);
+            return dateTime.ToString();
         }
     }
 }

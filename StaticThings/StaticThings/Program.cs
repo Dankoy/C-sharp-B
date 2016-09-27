@@ -10,7 +10,7 @@ namespace StaticThings
     {
         static void Main(string[] args)
         {
-            AClass1.M1();
+            System.Console.WriteLine("Method M1 returns {0}", AClass1.M1());
         }
     }
 }
