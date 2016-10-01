@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticThings", "StaticThing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingProperties", "UsingProperties\UsingProperties.csproj", "{1E11F7F3-44CB-4143-976E-A86245D1E399}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Built-in_types", "Built-in_types\Built-in_types.csproj", "{942918DD-FCD3-4789-9068-D181E74C236A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1E11F7F3-44CB-4143-976E-A86245D1E399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E11F7F3-44CB-4143-976E-A86245D1E399}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E11F7F3-44CB-4143-976E-A86245D1E399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942918DD-FCD3-4789-9068-D181E74C236A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942918DD-FCD3-4789-9068-D181E74C236A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942918DD-FCD3-4789-9068-D181E74C236A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942918DD-FCD3-4789-9068-D181E74C236A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
