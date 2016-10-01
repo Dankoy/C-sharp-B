@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+[Flags] enum Colors {None = 0, Red = 1, Green = 2, Blue = 3};
+
 namespace Built_in_types
 {
     class Program
@@ -68,6 +70,59 @@ namespace Built_in_types
             catch (OverflowException)
             {
                 Console.WriteLine("Conversion failed: {0} exceeds {1}.", num3, int.MaxValue);
+            }
+
+            // Using method Parse
+            String value = "-204";
+            try
+            {
+                int numb = Int32.Parse(value);
+                Console.WriteLine("Converted '{0}' to {1}.", value, numb);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Convertsion failure '{0}'.", value);
+            }
+
+            string valMin = Double.MinValue.ToString();
+            try
+            {
+                Console.WriteLine(Double.Parse(valMin));
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine("{0} overflow for Double type", valMin);
+            }
+            string valMax = Double.MaxValue.ToString();
+            try
+            {
+                Console.WriteLine(Double.Parse(valMax));
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine("{0} overflow for Double type", valMax);
+            }
+
+            // Using enum parsing
+            string[] colorStrings = { "0", "2", "8", "blue", "Blue", "Yellow", "Red, Greed" };
+            foreach (string colorString in colorStrings)
+            {
+                try
+                {
+                    Colors colorValue = (Colors)Enum.Parse(typeof(Colors), colorString);
+                    if (Enum.IsDefined(typeof(Colors), colorValue) | colorValue.ToString().Contains(","))
+                    {
+                        Console.WriteLine("Converted '{0}' to {1}.", colorString, colorValue.ToString());
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} - value is missing in enum Colors", colorString);
+                    }
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("'{0}' - is not a member of enum Colors.", colorString);
+                }
             }
         }
     }
