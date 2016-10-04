@@ -10,6 +10,11 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
+            AClass1 a1 = new AClass1();
+
+            a1.iArray[0] = 100;
+            Console.WriteLine(a1.iArray[0]);
+            Console.WriteLine(a1.iArray.GetLength(0));
         }
     }
 }

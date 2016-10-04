@@ -8,5 +8,13 @@ namespace Arrays
 {
     class AClass1
     {
+        public int[] iArray;
+        public string[] strArray;
+
+        public AClass1()
+        {
+            iArray = new int[10];
+            strArray = new string[5];
+        }
     }
 }
