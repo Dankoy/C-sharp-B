@@ -23,6 +23,19 @@ namespace JaggedArrays
             Console.WriteLine("First element of jagged array: {0}", jaggedArr[0][1, 0]);
 
             inArray(new int[] { 1, 4 });
+
+            var a = new[] { 1, 10, 100, 1000 };
+            var s = new[] { "string1", null, "string2" };
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write(a[i] + " ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i < s.Length; i++)
+            {
+                Console.Write(s[i] + " ");
+            }
+                
         }
     }
 }
