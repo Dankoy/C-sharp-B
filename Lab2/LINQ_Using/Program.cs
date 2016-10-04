@@ -17,7 +17,14 @@ namespace LINQ_Using
             var numQuery = from num in numbers where (num % 2) == 0 select num;
             var varWords = from w in words select new { Upper = w.ToUpper(), Lower = w.ToLower() };
 
-
+            foreach (int num in numQuery)
+            {
+                Console.Write("{0,1} ", num);
+            }
+            foreach (var ul in varWords)
+            {
+                Console.WriteLine("UpperCase letter: {0}, LowerCase letter: {1}", ul.Upper, ul.Lower);
+            }
         }
     }
 }
