@@ -22,7 +22,6 @@ namespace Arrays
             Console.WriteLine("Elements in array dArr2 = {0}\n First dimension {1}\n Second dimension {2}", dArr2.Length, dArr2.GetLength(0), dArr2.GetLength(1));
             Console.WriteLine("Amount of dimensions of array dArr2 = {0}", dArr2.Rank);
             
-           
         }
     }
 }
