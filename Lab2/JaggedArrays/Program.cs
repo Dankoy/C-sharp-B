@@ -8,6 +8,10 @@ namespace JaggedArrays
 {
     class Program
     {
+        public static void inArray(int[] i) 
+        {
+            Console.WriteLine("[0] = {0} [1] = {1}", i[0], i[1]);
+        }
         static void Main(string[] args)
         {
             int[][,] jaggedArr = new int[3][,] {
@@ -17,6 +21,8 @@ namespace JaggedArrays
             };
             Console.WriteLine("Rank of jagged array: " + jaggedArr.Rank + "\nLength of jagged array: " + jaggedArr.Length);
             Console.WriteLine("First element of jagged array: {0}", jaggedArr[0][1, 0]);
+
+            inArray(new int[] { 1, 4 });
         }
     }
 }
