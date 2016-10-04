@@ -13,6 +13,11 @@ namespace LINQ_Using
             // Will be used as data sources
             int[] numbers = new int[7] { 0, 1, 2, 3, 4, 5, 6 };
             string[] words = { "apple", "orange", "cherry" };
+
+            var numQuery = from num in numbers where (num % 2) == 0 select num;
+            var varWords = from w in words select new { Upper = w.ToUpper(), Lower = w.ToLower() };
+
+
         }
     }
 }
