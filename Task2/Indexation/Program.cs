@@ -22,6 +22,14 @@ namespace Indexation
 
             MyAttribute attributeObj = (MyAttribute) Attribute.GetCustomAttribute(t, typeof(MyAttribute));
             Console.WriteLine("Attribute name: {0}, attribute kod: {1}", attributeObj.Name, attributeObj.Kod);
+
+            // Some dynamic features
+            dynamic dyn = 1;
+            object obje = 1;
+            Console.WriteLine(dyn.GetType());
+            Console.WriteLine(obje.GetType());
+            dyn = dyn + 10;
+           // obje = obje + 10; Cant do this with object and int
         }
         [Obsolete("Warning message, showing by compiler.")]
         public static void method()
