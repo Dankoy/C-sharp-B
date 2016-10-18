@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Indexation
 {
+    [AttributeUsage(AttributeTargets.All)]
     class MyAttribute : System.Attribute
     {
         private string name;
@@ -30,6 +31,12 @@ namespace Indexation
             {
                 kod = value;
             }
+        }
+
+        public MyAttribute(string name)
+        {
+            this.name = name;
+            this.kod = 10;
         }
     }
 }
