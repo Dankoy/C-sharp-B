@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractClasses
 {
-    class AbstractClass1
+    abstract class AbstractClass1
     {
         public abstract int SFig(int a, int b);
     }
