@@ -9,6 +9,17 @@ namespace Collections
 {
     class Program
     {
+        public static void printCollection(IEnumerable list1)
+        {
+            System.Collections.IEnumerator myEnumerator = list1.GetEnumerator();    //Enumerator object created
+
+            while (myEnumerator.MoveNext())
+            {
+                Console.Write("\t{0}", myEnumerator.Current);
+                Console.WriteLine();
+            }
+
+        }
         static void Main(string[] args)
         {
             ArrayList aList1 = new ArrayList();
@@ -23,7 +34,7 @@ namespace Collections
             Console.WriteLine("\tCount: {0}", aList1.Count);    //Amount of elements in collection
             Console.WriteLine("\tCapacity: {0}", aList1.Capacity);  //Capacity of collection
 
-
+            printCollection(aList1);
         }
     }
 }
