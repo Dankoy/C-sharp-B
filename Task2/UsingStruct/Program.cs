@@ -41,12 +41,26 @@ namespace UsingStruct
                 }
                 switch (icount)
                 {
-                    case '0': break;
-                    case '1': break;
+                    case '0':
+                        Console.WriteLine("Insert Name: ");
+                        myAB[i].name = Console.ReadLine();
+                        Console.WriteLine("Insert phone: ");
+                        myAB[i].telfax = Console.ReadLine();
+                        i++;
+                        break;
+                    case '1':
+                        for (j = 0; j < 1; j++)
+                        {
+                            Console.Write(myAB[j].name);
+                            Console.Write("  ");
+                            Console.WriteLine(myAB[j].telfax);
+                        }
+                            break;
                     default: Console.WriteLine("Reading error!");
                         break;
                 }
             }
+
         }
     }
 }
