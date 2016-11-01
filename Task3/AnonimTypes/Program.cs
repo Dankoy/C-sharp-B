@@ -20,6 +20,39 @@ namespace AnonimTypes
             var anon = new { num = 123, strin = "qwerty", dem = 54 };
             reflectType(anon);
             
+            // Comparing anonim types. 
+            // Use method "Equals" to compare properties.
+            // Use "==" to compare references.
+            var v1 = new { Color = "Green", Size = 48, Price = 550 };
+            var v2 = new { Color = "Green", Size = 48, Price = 550 };
+
+            // Comparing:
+            if (v1.Equals(v2))
+            {
+                Console.WriteLine("Similar anonim objects.");
+            }
+            else
+            {
+                Console.WriteLine("Different anonim objects.");
+            }
+
+            if (v1 == v2)
+            {
+                Console.WriteLine("Similar refs.");
+            }
+            else
+            {
+                Console.WriteLine("Different refs.");
+            }
+
+            if (v1.GetType().Name == v2.GetType().Name)
+            {
+                Console.WriteLine("Similar anonim type.");
+            }
+            else
+            {
+                Console.WriteLine("Different anonim type.");
+            }
         }
     }
 }
