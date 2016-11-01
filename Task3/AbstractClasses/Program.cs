@@ -27,6 +27,13 @@ namespace AbstractClasses
             }
             bool var1 = ivar.F1();
             Console.WriteLine("Using method F1 from Interface1: {0}", var1);
+
+            // Making Object be an interface 
+            Object ivar1 = varb1 as Interface1;
+            if (ivar1 != null)
+            {
+                Console.WriteLine("ivar1 is refference to interface Interface1");
+            }
         }
     }
 }
