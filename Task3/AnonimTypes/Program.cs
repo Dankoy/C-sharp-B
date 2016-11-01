@@ -53,6 +53,18 @@ namespace AnonimTypes
             {
                 Console.WriteLine("Different anonim type.");
             }
+
+            // Overloading
+            A objA = new A();
+            A objB = new A();
+            Console.WriteLine("Comparing using \"Equals\": " + objA.Equals(objB));
+            Console.WriteLine("Comparing using \"==\": " + (objA == objB));
         }
+    }
+    class A
+    {
+        int x = 0;
+        int y = 0;
+        int z = 0;
     }
 }
