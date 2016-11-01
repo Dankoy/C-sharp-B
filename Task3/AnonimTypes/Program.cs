@@ -66,5 +66,29 @@ namespace AnonimTypes
         int x = 0;
         int y = 0;
         int z = 0;
+
+        //Overloading ==
+        public static bool operator ==(A a, A b)
+        {
+            // If both objects are "null" or both of them are the same instance => true
+            if (System.Object.ReferenceEquals(a, b))
+            {
+                return true;
+            }
+
+            // If only one object equals "null" => false
+            if (((object)a == null) || ((object)b == null))
+            {
+                return false;
+            }
+
+            // If objects fields are equal => true
+            return a.x == b.x && a.y == b.y && a.z == b.z;
+        }
+        // Necessary if you overload ==
+        public static bool operator != (A a, A b)
+        {
+            return !(a == b);
+        }
     }
 }
