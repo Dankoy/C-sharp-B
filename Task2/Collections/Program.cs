@@ -51,6 +51,20 @@ namespace Collections
             {
                 Console.Write(num + " ");
             }
+
+            Arr arr1 = new Arr(1111, 425, "MSU");
+            Arr arr2 = new Arr(34, 45, "hello");
+            Arr arr3 = new Arr(168, 12, "program");
+            List<Arr> arrayClassaArr = new List<Arr> { arr1, arr2, arr3 };
+
+            var arrQuery =
+               from qwert in arrayClassaArr
+               select qwert;
+
+            foreach (var element in arrQuery)
+            { 
+                Console.WriteLine("f1 = {0},\tf2 = {1},\ts1 = {2}", element.F1, element.F2, element.S1); 
+            }
         }
     }
 }
