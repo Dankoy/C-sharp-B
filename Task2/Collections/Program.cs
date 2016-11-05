@@ -45,6 +45,12 @@ namespace Collections
                 Console.Write(c + " ");
             }
             Console.WriteLine();
+            // Printing colection using LINQ
+            var numQuery = from num in dig1 select num.ToString();
+            foreach (string num in numQuery)
+            {
+                Console.Write(num + " ");
+            }
         }
     }
 }
