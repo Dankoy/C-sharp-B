@@ -38,7 +38,13 @@ namespace Collections
             // Access elements of collection
             printCollection(aList1);
 
-
+            // Initializators of collections
+            List<int> dig1 = new List<int> { 0, 1, 2, 3, 4, 5 };
+            foreach (int c in dig1)
+            {
+                Console.Write(c + " ");
+            }
+            Console.WriteLine();
         }
     }
 }

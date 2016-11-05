@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaggedArrays", "JaggedArray
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Using", "LINQ_Using\LINQ_Using.csproj", "{8B6031B8-6C18-4305-AF9D-46ABE639D9BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMade", "SelfMade\SelfMade.csproj", "{00B93508-37DA-4FD1-8AAD-F39319D6F7BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8B6031B8-6C18-4305-AF9D-46ABE639D9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B6031B8-6C18-4305-AF9D-46ABE639D9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B6031B8-6C18-4305-AF9D-46ABE639D9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B93508-37DA-4FD1-8AAD-F39319D6F7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B93508-37DA-4FD1-8AAD-F39319D6F7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B93508-37DA-4FD1-8AAD-F39319D6F7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B93508-37DA-4FD1-8AAD-F39319D6F7BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
