@@ -18,5 +18,15 @@ namespace MyDerriv1
         {
             return 2;
         }
+        public int F3()
+        {
+            return 33;
+        }
+
+        //Virtual method
+        public virtual string VirtualF4()
+        {
+            return "VirtualF4 F4 class CA";
+        }
     }
 }

@@ -12,5 +12,11 @@ namespace MyDerriv1
         {
             return F2();
         }
+
+        // Method override CA.virtualF4()
+        public  override string VirtualF4()
+        {
+            return "VirtualF4 F4 class CB";
+        }
     }
 }
