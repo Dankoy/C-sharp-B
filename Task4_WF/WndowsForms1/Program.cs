@@ -11,12 +11,16 @@ namespace WndowsForms1
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+        static public Form1 f1; //Allows to access members of class
+
         [STAThread]
         static void Main()
         {
+            f1 = new Form1();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(f1);
         }
     }
 }
