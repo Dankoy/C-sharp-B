@@ -24,11 +24,21 @@ namespace SelfMade
         {
             return matrix[i, j];
         }
+        // Method using references
+        private static void getElement2(ref int elemen, int i, int j, int[,] matrix) {
+            elemen = matrix[i, j];
+        }
         static void Main(string[] args)
         {
             int[,] A1 = new int[10,10];
             InitializeMatrix(A1, 10, 10);
             Console.WriteLine(getElement1(4, 6, A1));
+
+            int elem = 0;
+            getElement2(ref elem, 4, 6, A1);
+            Console.WriteLine(elem);
+
+
         }
     }
 }
