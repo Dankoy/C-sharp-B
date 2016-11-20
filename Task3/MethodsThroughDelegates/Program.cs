@@ -25,6 +25,17 @@ namespace MethodsThroughDelegates
 
             //Calling method f_Static using delegate
             f_d();
+
+            // Creating the delegate object
+            CA.Method1Callback myCall = new CA.Method1Callback(Program.Method2);
+
+            CA.Method1(myCall);
+        }
+        // Using callback through delegate
+        static void Method2(string str2)
+        {
+            Console.WriteLine("Method2 is working!");
+            Console.WriteLine(str2);
         }
     }
 }
