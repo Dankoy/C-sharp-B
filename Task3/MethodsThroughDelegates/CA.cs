@@ -17,5 +17,13 @@ namespace MethodsThroughDelegates
         {
             Console.WriteLine("Calling the static method using delegate.");
         }
+
+        //Callback methods 
+        public delegate void Method1Callback(string str1);
+        public static void Method1(Method1Callback callback)
+        {
+            Console.WriteLine("Method1 is working!");
+            callback("1");
+        }
     }
 }
