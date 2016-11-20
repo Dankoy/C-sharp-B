@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Metadata.CA" Collapsed="true">
+  <Class Name="Metadata.CA">
     <Position X="0.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Metadata.CA.CB_Inside_CA" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CA.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAAAAAAAAAAA=</HashCode>
       <FileName>CA.cs</FileName>
     </TypeIdentifier>
   </Class>
