@@ -11,6 +11,10 @@ namespace Metadata
         static void Main(string[] args)
         {
             WhatIsType("System.Char");
+            WhatIsType("Metadata.struct1");
+            WhatIsType("Metadata.Program");
+            WhatIsType("Metadata.CA");
+            WhatIsType("Metadata.CA+CB_Inside_CA");
         }
 
         // Method the call for metadata
