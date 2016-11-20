@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonimTypes", "AnonimTypes\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsThroughDelegates", "MethodsThroughDelegates\MethodsThroughDelegates.csproj", "{37C05550-7713-426E-AC04-621527791C0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadata", "Metadata\Metadata.csproj", "{1DE15429-9920-4498-9AC4-DB7B4BD4726B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{37C05550-7713-426E-AC04-621527791C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37C05550-7713-426E-AC04-621527791C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37C05550-7713-426E-AC04-621527791C0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE15429-9920-4498-9AC4-DB7B4BD4726B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE15429-9920-4498-9AC4-DB7B4BD4726B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE15429-9920-4498-9AC4-DB7B4BD4726B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE15429-9920-4498-9AC4-DB7B4BD4726B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
