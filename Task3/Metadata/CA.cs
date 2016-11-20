@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Metadata
 {
+    struct struct1 { }
     class CA
     {
         public class CB_Inside_CA
