@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsThroughDelegates", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadata", "Metadata\Metadata.csproj", "{1DE15429-9920-4498-9AC4-DB7B4BD4726B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMade", "SelfMade\SelfMade.csproj", "{B49C0A0E-3F6E-42C0-AD69-86DD4806BCEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1DE15429-9920-4498-9AC4-DB7B4BD4726B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DE15429-9920-4498-9AC4-DB7B4BD4726B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DE15429-9920-4498-9AC4-DB7B4BD4726B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49C0A0E-3F6E-42C0-AD69-86DD4806BCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49C0A0E-3F6E-42C0-AD69-86DD4806BCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49C0A0E-3F6E-42C0-AD69-86DD4806BCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49C0A0E-3F6E-42C0-AD69-86DD4806BCEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
