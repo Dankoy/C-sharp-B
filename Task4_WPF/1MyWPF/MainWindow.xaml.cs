@@ -39,5 +39,14 @@ namespace _1MyWPF
         {
             this.Media.Stop();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog f = new Microsoft.Win32.OpenFileDialog();
+            if ((bool)f.ShowDialog())
+            {
+                Media.Source = new System.Uri(f.FileName);
+            }
+        }
     }
 }
