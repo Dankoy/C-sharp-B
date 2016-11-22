@@ -24,5 +24,20 @@ namespace _1MyWPF
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(DateTime.Now.ToString());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Media.Play();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Media.Stop();
+        }
     }
 }
