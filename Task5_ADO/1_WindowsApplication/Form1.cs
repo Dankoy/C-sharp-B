@@ -16,5 +16,14 @@ namespace _1_WindowsApplication
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'my_DBDataSet1.Book' table. You can move, or remove it, as needed.
+            this.bookTableAdapter.Fill(this.my_DBDataSet1.Book);
+            // TODO: This line of code loads data into the 'my_DBDataSet.t3' table. You can move, or remove it, as needed.
+            this.t3TableAdapter.Fill(this.my_DBDataSet.t3);
+
+        }
     }
 }
