@@ -24,6 +24,18 @@ namespace _1_WindowsApplication
             // TODO: This line of code loads data into the 'my_DBDataSet.t3' table. You can move, or remove it, as needed.
             this.t3TableAdapter.Fill(this.my_DBDataSet.t3);
 
+            oleDbDataAdapter1.Fill(this.my_DBDataSet);
+
+        }
+
+        private void oleDbDataAdapter2_RowUpdated(object sender, System.Data.OleDb.OleDbRowUpdatedEventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
