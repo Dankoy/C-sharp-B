@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{103E33CE-9A45-4D96-A054-C0A7232E94D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-Arrays", "Arrays\1-Arrays.csproj", "{103E33CE-9A45-4D96-A054-C0A7232E94D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JaggedArrays", "JaggedArrays\JaggedArrays.csproj", "{57562E50-82EC-43C7-B2B4-A0F2371C6853}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-JaggedArrays", "JaggedArrays\2-JaggedArrays.csproj", "{57562E50-82EC-43C7-B2B4-A0F2371C6853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_Using", "LINQ_Using\LINQ_Using.csproj", "{8B6031B8-6C18-4305-AF9D-46ABE639D9BA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-LINQ_Using", "LINQ_Using\3-LINQ_Using.csproj", "{8B6031B8-6C18-4305-AF9D-46ABE639D9BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMade", "SelfMade\SelfMade.csproj", "{00B93508-37DA-4FD1-8AAD-F39319D6F7BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-SelfMade", "SelfMade\4-SelfMade.csproj", "{00B93508-37DA-4FD1-8AAD-F39319D6F7BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
