@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexation", "Indexation\Indexation.csproj", "{2E0DFAC0-8EA1-455B-AF16-B4E76D87965D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-Indexation", "Indexation\1-Indexation.csproj", "{2E0DFAC0-8EA1-455B-AF16-B4E76D87965D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingStruct", "UsingStruct\UsingStruct.csproj", "{090CFDC8-5641-465F-80A5-20F6332CDC86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-UsingStruct", "UsingStruct\2-UsingStruct.csproj", "{090CFDC8-5641-465F-80A5-20F6332CDC86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{E4A37664-5396-41E5-898B-CCFDD545C183}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-Collections", "Collections\3-Collections.csproj", "{E4A37664-5396-41E5-898B-CCFDD545C183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDerriv1", "MyDerriv1\MyDerriv1.csproj", "{5C352D99-0C16-4BF2-8110-69BC55FA5FCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-MyDerriv1", "MyDerriv1\4-MyDerriv1.csproj", "{5C352D99-0C16-4BF2-8110-69BC55FA5FCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMade", "SelfMade\SelfMade.csproj", "{B12AB2BF-D622-45F0-B1CA-A92B9C7FB7C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-SelfMade", "SelfMade\5-SelfMade.csproj", "{B12AB2BF-D622-45F0-B1CA-A92B9C7FB7C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

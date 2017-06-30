@@ -10,12 +10,16 @@ namespace Indexation
     {
         static void Main(string[] args)
         {
+            // Using indexation
+
             AClass1 obj = new AClass1();
             obj[0] = 100;
             obj[1] = 200;
             obj[2] = 300;
             Console.WriteLine("1 - {0}, 2 - {1}, 3 - {2}", obj[0], obj[1], obj[2]);
             method();
+
+            // Using Attributes
 
             Type t = typeof(AClass1);
             t = obj.GetType();

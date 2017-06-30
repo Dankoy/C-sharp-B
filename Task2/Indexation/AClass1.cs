@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Indexation
 {
-    [My("AClass1", Kod=25)]
+    [My("AClass1", Kod=25)] // Attribute goes to class AClass1
     class AClass1
     {
         private int[] imyArray = new int[20]; //Collection
