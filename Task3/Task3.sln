@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{4AFE6241-647C-4DF5-A72A-4E96CD46E974}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-AbstractClasses", "AbstractClasses\1-AbstractClasses.csproj", "{4AFE6241-647C-4DF5-A72A-4E96CD46E974}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedClasses", "NestedClasses\NestedClasses.csproj", "{DF947311-C8AD-4150-943A-4D64D6E47310}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-NestedClasses", "NestedClasses\2-NestedClasses.csproj", "{DF947311-C8AD-4150-943A-4D64D6E47310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnonimTypes", "AnonimTypes\AnonimTypes.csproj", "{12DB789F-8ED1-48C4-A8E5-21F4CE7599D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-AnonimTypes", "AnonimTypes\3-AnonimTypes.csproj", "{12DB789F-8ED1-48C4-A8E5-21F4CE7599D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodsThroughDelegates", "MethodsThroughDelegates\MethodsThroughDelegates.csproj", "{37C05550-7713-426E-AC04-621527791C0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-MethodsThroughDelegates", "MethodsThroughDelegates\4-MethodsThroughDelegates.csproj", "{37C05550-7713-426E-AC04-621527791C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metadata", "Metadata\Metadata.csproj", "{1DE15429-9920-4498-9AC4-DB7B4BD4726B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-Metadata", "Metadata\5-Metadata.csproj", "{1DE15429-9920-4498-9AC4-DB7B4BD4726B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMade", "SelfMade\SelfMade.csproj", "{B49C0A0E-3F6E-42C0-AD69-86DD4806BCEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-SelfMade", "SelfMade\6-SelfMade.csproj", "{B49C0A0E-3F6E-42C0-AD69-86DD4806BCEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalAssemblyReflector", "ExternalAssemblyReflector\ExternalAssemblyReflector.csproj", "{633F0268-78EE-46F6-9CBE-28EFB08987D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-ExternalAssemblyReflector", "ExternalAssemblyReflector\7-ExternalAssemblyReflector.csproj", "{633F0268-78EE-46F6-9CBE-28EFB08987D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LateBinding", "LateBinding\LateBinding.csproj", "{639654A3-86D3-415D-B8A1-700CD0CA636C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-LateBinding", "LateBinding\8-LateBinding.csproj", "{639654A3-86D3-415D-B8A1-700CD0CA636C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLibrary", "CarLibrary\CarLibrary.csproj", "{CA72F8F5-799C-4439-9E99-4F8292B51A17}"
 EndProject
