@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{FF9F75DF-D039-4DCE-A440-3A1FEBC0B1D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-OOP", "OOP\1-OOP.csproj", "{FF9F75DF-D039-4DCE-A440-3A1FEBC0B1D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticThings", "StaticThings\StaticThings.csproj", "{C1AA609B-2E4C-4E21-8CCE-6D80C2ADA15B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-StaticThings", "StaticThings\2-StaticThings.csproj", "{C1AA609B-2E4C-4E21-8CCE-6D80C2ADA15B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingProperties", "UsingProperties\UsingProperties.csproj", "{1E11F7F3-44CB-4143-976E-A86245D1E399}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-UsingProperties", "UsingProperties\3-UsingProperties.csproj", "{1E11F7F3-44CB-4143-976E-A86245D1E399}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Built-in_types", "Built-in_types\Built-in_types.csproj", "{942918DD-FCD3-4789-9068-D181E74C236A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-Built-in_types", "Built-in_types\4-Built-in_types.csproj", "{942918DD-FCD3-4789-9068-D181E74C236A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfMade", "SelfMade\SelfMade.csproj", "{70FC26FA-1E1C-47E3-BC50-D06DB06C09B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-SelfMade", "SelfMade\5-SelfMade.csproj", "{70FC26FA-1E1C-47E3-BC50-D06DB06C09B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
