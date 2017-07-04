@@ -12,8 +12,15 @@ namespace WndowsForms1
 {
     public partial class Form2 : Form
     {
+        public Object fo;
+
         public Form2()
         {
+            InitializeComponent();
+        }
+        public Form2(Object f)
+        {
+            fo = (Form1)f;
             InitializeComponent();
         }
 
@@ -24,8 +31,10 @@ namespace WndowsForms1
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Program.f1.f2.Dispose();
-            Program.f1.f2 = null;
+
+            //Changed so it actually has object, not null.
+            ((Form1)fo).f2.Dispose();
+            ((Form1)fo).f2 = null;
         }
     }
 }

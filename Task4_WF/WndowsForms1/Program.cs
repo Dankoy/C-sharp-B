@@ -17,9 +17,9 @@ namespace WndowsForms1
         [STAThread]
         static void Main()
         {
-            f1 = new Form1();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            f1 = new Form1();
             Application.Run(new Form1());
         }
     }
