@@ -8,6 +8,9 @@ namespace Task4_WF_VS2015
 {
     static class Program
     {
+
+        static public Form1 f1;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,8 @@ namespace Task4_WF_VS2015
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            f1 = new Form1();
+            Application.Run(f1);
         }
     }
 }
