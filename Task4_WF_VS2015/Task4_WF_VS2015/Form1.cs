@@ -14,6 +14,7 @@ namespace Task4_WF_VS2015
     {
 
         public Form2 f2;
+        public Form3 f3;
 
         public Form1()
         {
@@ -37,6 +38,25 @@ namespace Task4_WF_VS2015
                 f2 = new Form2();
                 f2.Show();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3();
+            if (f3.ShowDialog(this) == DialogResult.OK)
+            {
+                MessageBox.Show("OK");
+            }
+            else
+            {
+                MessageBox.Show("Cancel");
+            }
+            f3.Dispose();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            (new Form2()).Show();
         }
     }
 }
