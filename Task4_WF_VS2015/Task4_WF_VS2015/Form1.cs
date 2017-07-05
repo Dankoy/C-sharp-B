@@ -31,6 +31,10 @@ namespace Task4_WF_VS2015
 
         }
 
+        //
+        // First task for creating forms
+        //
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (object.ReferenceEquals(f2, null))
@@ -40,6 +44,8 @@ namespace Task4_WF_VS2015
             }
         }
 
+
+        // Show modal dialogs
         private void button2_Click(object sender, EventArgs e)
         {
             Form3 f3 = new Form3();
@@ -54,9 +60,15 @@ namespace Task4_WF_VS2015
             f3.Dispose();
         }
 
+
+        // Creating FOrm2 as anonymous object
         private void button3_Click(object sender, EventArgs e)
         {
             (new Form2()).Show();
         }
+
+        //
+        // End of first task
+        //
     }
 }
