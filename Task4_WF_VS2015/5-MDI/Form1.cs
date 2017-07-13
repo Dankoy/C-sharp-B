@@ -43,5 +43,18 @@ namespace _5_MDI
             newForm.MdiParent = this;
             newForm.Show();
         }
+
+        private void newToolStripButton_Click(object sender, EventArgs e)
+        {
+            int r, g, b;
+            Random ran = new Random();
+            r = ran.Next(0, 255);
+            g = ran.Next(0, 255);
+            b = ran.Next(0, 255);
+            Color c = Color.FromArgb(r, g, b);
+            this.BackColor = c;
+
+            this.Text = c.ToString();
+        }
     }
 }
