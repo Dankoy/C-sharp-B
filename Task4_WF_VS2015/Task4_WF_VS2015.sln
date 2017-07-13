@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-Layouts (from console to 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-MDI", "5-MDI\5-MDI.csproj", "{AB3850D3-568C-4C32-958C-C7EF42E5DAFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-ControlElements", "6-ControlElements\6-ControlElements.csproj", "{51C590BE-0F86-4C86-99EE-C021D4A84822}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AB3850D3-568C-4C32-958C-C7EF42E5DAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB3850D3-568C-4C32-958C-C7EF42E5DAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB3850D3-568C-4C32-958C-C7EF42E5DAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C590BE-0F86-4C86-99EE-C021D4A84822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C590BE-0F86-4C86-99EE-C021D4A84822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C590BE-0F86-4C86-99EE-C021D4A84822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C590BE-0F86-4C86-99EE-C021D4A84822}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
