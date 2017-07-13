@@ -64,5 +64,17 @@ namespace _3_MessageBox
                     textBox2.AppendText(sr.ReadToEnd());
                 }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog(this) == DialogResult.OK)
+                BackColor = colorDialog1.Color;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog(this) == DialogResult.OK)
+                textBox2.ForeColor = colorDialog1.Color;
+        }
     }
 }
