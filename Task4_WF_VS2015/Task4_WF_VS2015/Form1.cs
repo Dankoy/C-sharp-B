@@ -13,8 +13,10 @@ namespace Task4_WF_VS2015
     public partial class Form1 : Form
     {
 
-        public Form2 f2;
-        public Form3 f3;
+        public Form2 f2;        // 1 task 
+        public Form3 f3;        // 1 task
+
+        public Graphics g;      // 2 task
 
         public Form1()
         {
@@ -23,7 +25,7 @@ namespace Task4_WF_VS2015
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            g = panel2.CreateGraphics();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -67,8 +69,21 @@ namespace Task4_WF_VS2015
             (new Form2()).Show();
         }
 
+
+
         //
         // End of first task
         //
+
+        //
+        // Begining of second task
+        //
+        
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Pen pen = new Pen(Color.Red);
+            g.DrawEllipse(pen, 10, 10, 60, 60);     // g - graphical context
+            pen.Dispose();  // Freeing pen
+        }
     }
 }
