@@ -16,5 +16,32 @@ namespace _5_MDI
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void cascadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChildForm newForm = new ChildForm();
+            newForm.MdiParent = this;
+            newForm.Show();
+        }
     }
 }
