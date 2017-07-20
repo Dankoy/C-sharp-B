@@ -12,6 +12,8 @@ namespace _11_SelfMade
 {
     public partial class Form1 : Form
     {
+        
+
         public Form1()
         {
             InitializeComponent();
@@ -78,6 +80,19 @@ namespace _11_SelfMade
         private void changeTime(object sender, EventArgs e)
         {
             this.textBox4.Text = DateTime.Now.ToString("h:mm:ss");
+        }
+
+        // Hover for status strip
+        private void statusStrip1_MouseHover(object sender, EventArgs e)
+        {
+            ((ToolStripStatusLabel)this.statusStrip1.Items[0]).Text = DateTime.Now.ToString("h:mm:ss");
+            ((ToolStripStatusLabel)this.statusStrip1.Items[1]).Text = DateTime.Today.ToString("M/d/yyyy");
+            ((ToolStripStatusLabel)this.statusStrip1.Items[2]).Text = this.BackColor.ToString();
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
