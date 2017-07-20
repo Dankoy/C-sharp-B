@@ -16,5 +16,16 @@ namespace _11_SelfMade
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.listBox1.Items.Add(this.textBox1.Text);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string s = (this.checkBox1.Checked ? this.checkBox1.Name : "") + " " + (this.checkBox2.Checked ? this.checkBox2.Name : "");
+            this.textBox2.Text = s;
+        }
     }
 }
