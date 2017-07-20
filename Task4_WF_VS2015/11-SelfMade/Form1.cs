@@ -12,7 +12,8 @@ namespace _11_SelfMade
 {
     public partial class Form1 : Form
     {
-        
+
+        private Form2 form2;
 
         public Form1()
         {
@@ -90,9 +91,18 @@ namespace _11_SelfMade
             ((ToolStripStatusLabel)this.statusStrip1.Items[2]).Text = this.BackColor.ToString();
         }
 
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
-        {
 
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Graphics g = this.form2.CreateGraphics();
+            g.FillRectangle(Brushes.Blue, 20, 10, 50, 70);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.form2 = new Form2();
+            form2.Show();
         }
     }
 }
