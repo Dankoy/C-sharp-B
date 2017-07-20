@@ -67,5 +67,26 @@ namespace _6_ControlElements
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             checkBox1.Checked = checkBox2.Checked = false;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Control control = button4.Parent;
+            control.Text = "This is GroupBox";
+            control.BackColor = Color.Blue;
+            Form myForm = button4.FindForm();
+            myForm.Text = "Form with button";
+            myForm.BackColor = Color.Red;
+            if (this.radioButton3.Checked)
+                myForm.BackColor = this.radioButton3.BackColor;
+            else if (this.radioButton4.Checked)
+                myForm.BackColor = this.radioButton4.BackColor;
+            else myForm.BackColor = this.radioButton5.BackColor;
+            foreach (Control b in this.groupBox3.Controls)
+            {
+                // this.textBox2.AppendText(b.ToString());
+                if (((RadioButton)b).Checked)
+                    control.BackColor = ((RadioButton)b).BackColor;
+            }
+        }
     }
 }
