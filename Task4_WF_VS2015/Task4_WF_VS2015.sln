@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-MDI", "5-MDI\5-MDI.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-ControlElements", "6-ControlElements\6-ControlElements.csproj", "{51C590BE-0F86-4C86-99EE-C021D4A84822}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-Lists", "7-Lists\7-Lists.csproj", "{0E0ADD42-888E-4378-8859-071361CFEE3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{51C590BE-0F86-4C86-99EE-C021D4A84822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51C590BE-0F86-4C86-99EE-C021D4A84822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51C590BE-0F86-4C86-99EE-C021D4A84822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0ADD42-888E-4378-8859-071361CFEE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0ADD42-888E-4378-8859-071361CFEE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0ADD42-888E-4378-8859-071361CFEE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0ADD42-888E-4378-8859-071361CFEE3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
