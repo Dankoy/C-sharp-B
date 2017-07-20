@@ -60,5 +60,24 @@ namespace _11_SelfMade
             dialog.ShowDialog();
             this.richTextBox1.SelectionBackColor = dialog.Color;
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+                this.pictureBox1.Image = Image.FromFile(dialog.FileName);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Timer timer = new Timer();
+            timer.Interval = 1;
+            timer.Tick += changeTime;
+            timer.Enabled = true;
+        }
+        private void changeTime(object sender, EventArgs e)
+        {
+            this.textBox4.Text = DateTime.Now.ToString("h:mm:ss");
+        }
     }
 }
