@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -45,16 +46,18 @@
             // 
             // button1
             // 
+            this.button1.ImageList = this.imageList1;
             this.button1.Location = new System.Drawing.Point(13, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(739, 75);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 141);
+            this.textBox1.Location = new System.Drawing.Point(13, 107);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(248, 20);
             this.textBox1.TabIndex = 1;
@@ -62,20 +65,21 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(13, 177);
+            this.button2.Location = new System.Drawing.Point(13, 144);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(248, 45);
             this.button2.TabIndex = 2;
             this.button2.Text = "button2 Change text of button1";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(293, 141);
+            this.groupBox1.Location = new System.Drawing.Point(293, 93);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(459, 100);
+            this.groupBox1.Size = new System.Drawing.Size(459, 148);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -88,63 +92,74 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "button3 Choose the drawig for button1";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(36, 260);
+            this.checkBox1.Location = new System.Drawing.Point(13, 210);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(184, 17);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "checkBox1 Drawing in the middle";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(36, 296);
+            this.checkBox2.Location = new System.Drawing.Point(13, 243);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(178, 17);
             this.checkBox2.TabIndex = 6;
             this.checkBox2.Text = "checkBox2 Drawing on the right";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(36, 335);
+            this.checkBox3.Location = new System.Drawing.Point(12, 282);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(172, 17);
             this.checkBox3.TabIndex = 7;
             this.checkBox3.Text = "checkBox3 Drawing on the left";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "1.jpg");
+            this.imageList1.Images.SetKeyName(1, "2.jpg");
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(24, 36);
+            this.radioButton1.ImageIndex = 0;
+            this.radioButton1.ImageList = this.imageList1;
+            this.radioButton1.Location = new System.Drawing.Point(40, 29);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.Size = new System.Drawing.Size(85, 67);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.Text = "radioButton1\r\n";
+            this.radioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(329, 36);
+            this.radioButton2.ImageIndex = 1;
+            this.radioButton2.ImageList = this.imageList1;
+            this.radioButton2.Location = new System.Drawing.Point(295, 29);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
+            this.radioButton2.Size = new System.Drawing.Size(85, 67);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "radioButton2";
+            this.radioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Form1

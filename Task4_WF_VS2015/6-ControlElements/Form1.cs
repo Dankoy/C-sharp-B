@@ -21,5 +21,51 @@ namespace _6_ControlElements
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        // CHange text in button 1
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.button1.Text = this.textBox1.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (!(this.radioButton1.Checked || this.radioButton2.Checked))
+            {
+                MessageBox.Show("Choose image");
+            }
+            else if (this.radioButton1.Checked)
+            {   //CHosed 1 radiobutton
+                this.button1.Image = Image.FromFile("C:\\Users\\Evgeny\\VS Projects\\C-sharp-B\\Task4_WF_VS2015\\1.jpg");
+            }
+            else
+            {
+                this.button1.Image = Image.FromFile("C:\\Users\\Evgeny\\VS Projects\\C-sharp-B\\Task4_WF_VS2015\\2.jpg");
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {         
+                this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+                checkBox2.Checked = checkBox3.Checked = false;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            checkBox1.Checked = checkBox3.Checked = false;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            checkBox1.Checked = checkBox2.Checked = false;
+        }
     }
 }
