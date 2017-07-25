@@ -29,5 +29,10 @@ namespace _3_ApplicationProperties
             t2.Text = Application.Current.Properties["p1"].ToString() + "\r\n";
             t2.AppendText(Application.Current.Properties["p2"].ToString());
         }
+
+        private void Window1_MouseMove(object sender, MouseEventArgs e)
+        {
+            this.Title = e.GetPosition(this).ToString();
+        }
     }
 }
