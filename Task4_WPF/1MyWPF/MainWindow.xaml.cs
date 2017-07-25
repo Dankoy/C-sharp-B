@@ -48,5 +48,11 @@ namespace _1MyWPF
                 Media.Source = new System.Uri(f.FileName);
             }
         }
+
+        private void button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Button b = sender as Button;
+            b.Style = (Style)this.FindResource("s1");
+        }
     }
 }

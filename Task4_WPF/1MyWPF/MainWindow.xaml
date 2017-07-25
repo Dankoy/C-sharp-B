@@ -15,7 +15,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid Margin="0,0,0,-1" HorizontalAlignment="Left" Width="515" Height="321" VerticalAlignment="Top">
         <Button Content="Show Date" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="24,274,0,0" Click="Button_Click"/>
         <StackPanel HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="498" Margin="10,10,0,0">
             <MediaElement x:Name="Media" Height="123" Margin="0,0,-0.4,0" UnloadedBehavior="Stop" LoadedBehavior="Manual" Source="Media.mp4" Style="{DynamicResource s1}"/>
@@ -23,6 +23,7 @@
             <Button Content="Stop" Margin="0,0,-0.4,0" Height="40" Click="Button_Click_2" Style="{DynamicResource s1}"/>
             <Button Content="Choose file" Height="36" Margin="0,0,-0.4,0" Click="Button_Click_3" Style="{DynamicResource s1}"/>
         </StackPanel>
+        <Button x:Name="button" Content="Change style" HorizontalAlignment="Left" Margin="397,267,0,0" VerticalAlignment="Top" Width="89" Height="37" Click="button_Click_4"/>
 
     </Grid>
 </Window>
