@@ -1,0 +1,21 @@
+﻿<Window x:Class="_5_SelfMade.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5_SelfMade"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="900">
+    <Grid>
+        <ListBox x:Name="field1" HorizontalAlignment="Left" Height="262" Margin="10,10,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.495,0.511"/>
+        <ListBox x:Name="field4" HorizontalAlignment="Left" Height="262" Margin="655,10,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.495,0.511"/>
+        <ListBox x:Name="field3" HorizontalAlignment="Left" Height="262" Margin="440,10,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.495,0.511"/>
+        <ListBox x:Name="field2" HorizontalAlignment="Left" Height="262" Margin="225,10,0,0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.495,0.511"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="35" Margin="440,277,0,0" TextWrapping="Wrap" Text="C:\Users\Evgeny\VS Projects\C-sharp-B\Task4_WPF\5-SelfMade\Folder2\" VerticalAlignment="Top" Width="425"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Height="35" Margin="10,277,0,0" TextWrapping="Wrap" Text="C:\Users\Evgeny\VS Projects\C-sharp-B\Task4_WPF\5-SelfMade\Folder1\" VerticalAlignment="Top" Width="425"/>
+        <Button Content="Show folders" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" Width="210" Height="30" Click="Button_Click"/>
+        <Button Content="Show folders files" HorizontalAlignment="Left" Margin="225,317,0,0" VerticalAlignment="Top" Width="210" Height="30" Click="Button_Click_1"/>
+        <Button Content="Compare files" HorizontalAlignment="Left" Margin="440,317,0,0" VerticalAlignment="Top" Width="210" Height="30" Click="Button_Click_2"/>
+        <Button Content="Write files" HorizontalAlignment="Left" Margin="655,317,0,0" VerticalAlignment="Top" Width="210" Height="30" Click="Button_Click_3"/>
+    </Grid>
+</Window>
