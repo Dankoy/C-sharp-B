@@ -18,10 +18,10 @@
     <Grid>
         <Button Content="Show Date" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="24,274,0,0" Click="Button_Click"/>
         <StackPanel HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="498" Margin="10,10,0,0">
-            <MediaElement x:Name="Media" Height="123" Margin="0,0,-0.4,0" UnloadedBehavior="Stop" LoadedBehavior="Manual" Source="Media.mp4"/>
-            <Button Content="Start" Margin="0,0,-0.4,0" Height="37" Click="Button_Click_1"/>
-            <Button Content="Stop" Margin="0,0,-0.4,0" Height="40" Click="Button_Click_2"/>
-            <Button Content="Choose file" Height="36" Margin="0,0,-0.4,0" Click="Button_Click_3"/>
+            <MediaElement x:Name="Media" Height="123" Margin="0,0,-0.4,0" UnloadedBehavior="Stop" LoadedBehavior="Manual" Source="Media.mp4" Style="{DynamicResource s1}"/>
+            <Button Content="Start" Margin="0,0,-0.4,0" Height="37" Click="Button_Click_1" Style="{DynamicResource s1}"/>
+            <Button Content="Stop" Margin="0,0,-0.4,0" Height="40" Click="Button_Click_2" Style="{DynamicResource s1}"/>
+            <Button Content="Choose file" Height="36" Margin="0,0,-0.4,0" Click="Button_Click_3" Style="{DynamicResource s1}"/>
         </StackPanel>
 
     </Grid>
