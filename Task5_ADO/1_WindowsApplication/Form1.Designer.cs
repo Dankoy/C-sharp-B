@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.my_DBDataSet1 = new _1_WindowsApplication.My_DBDataSet1();
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.my_DBDataSet1 = new _1_WindowsApplication.My_DBDataSet1();
             this.bookTableAdapter = new _1_WindowsApplication.My_DBDataSet1TableAdapters.BookTableAdapter();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
+            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
-            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.my_DBDataSet = new _1_WindowsApplication.My_DBDataSet();
             this.t3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.t3TableAdapter = new _1_WindowsApplication.My_DBDataSetTableAdapters.t3TableAdapter();
@@ -45,8 +45,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.my_DBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.my_DBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.t3BindingSource)).BeginInit();
             this.SuspendLayout();
@@ -58,10 +58,11 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.bookBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(150, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(419, 122);
             this.dataGridView1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -71,15 +72,15 @@
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // my_DBDataSet1
-            // 
-            this.my_DBDataSet1.DataSetName = "My_DBDataSet1";
-            this.my_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // bookBindingSource
             // 
             this.bookBindingSource.DataMember = "Book";
             this.bookBindingSource.DataSource = this.my_DBDataSet1;
+            // 
+            // my_DBDataSet1
+            // 
+            this.my_DBDataSet1.DataSetName = "My_DBDataSet1";
+            this.my_DBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bookTableAdapter
             // 
@@ -89,6 +90,11 @@
             // 
             this.oleDbSelectCommand1.CommandText = "SELECT Book1.*\r\nFROM     Book1";
             this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
+            // 
+            // oleDbConnection1
+            // 
+            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=PK-14;Integrated Security=SSPI;Initial Catalog=My_" +
+    "DB";
             // 
             // oleDbInsertCommand1
             // 
@@ -112,11 +118,6 @@
                         new System.Data.Common.DataColumnMapping("indexb", "indexb")})});
             this.oleDbDataAdapter1.RowUpdated += new System.Data.OleDb.OleDbRowUpdatedEventHandler(this.oleDbDataAdapter1_RowUpdated);
             // 
-            // oleDbConnection1
-            // 
-            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=PK-14;Integrated Security=SSPI;Initial Catalog=My_" +
-    "DB";
-            // 
             // my_DBDataSet
             // 
             this.my_DBDataSet.DataSetName = "My_DBDataSet";
@@ -136,19 +137,20 @@
             this.listBox1.DataSource = this.bookBindingSource;
             this.listBox1.DisplayMember = "name";
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(220, 141);
+            this.listBox1.Location = new System.Drawing.Point(11, 183);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(345, 132);
+            this.listBox1.Size = new System.Drawing.Size(260, 108);
             this.listBox1.TabIndex = 1;
             this.listBox1.ValueMember = "id";
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(259, 38);
+            this.button1.Location = new System.Drawing.Point(364, 236);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(183, 23);
+            this.button1.Size = new System.Drawing.Size(137, 19);
             this.button1.TabIndex = 2;
             this.button1.Text = "Show data set";
             this.button1.UseVisualStyleBackColor = true;
@@ -156,26 +158,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(283, 84);
+            this.textBox1.Location = new System.Drawing.Point(414, 271);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 3;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 372);
+            this.ClientSize = new System.Drawing.Size(512, 302);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.my_DBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.my_DBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.t3BindingSource)).EndInit();
             this.ResumeLayout(false);

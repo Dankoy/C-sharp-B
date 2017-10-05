@@ -68,9 +68,9 @@ namespace _5_SelfMade
             ArrayList collection2 = filterLists(this.field2.Items, this.field1.Items);
 
             //файлы из 1-й директории, которые более старые чем их тезки во второй
-            this.field3.ItemsSource = filterDates(collection1, text1.Text, text2.Text);
+        //    this.field3.ItemsSource = filterDates(collection1, text1.Text, text2.Text);
             //файлы из 2-й директории, которые более старые чем их тезки в первой
-            this.field4.ItemsSource = filterDates(collection2, text2.Text, text1.Text);
+       //     this.field4.ItemsSource = filterDates(collection2, text2.Text, text1.Text);
         }
 
         private ArrayList filterLists(ItemCollection items1, ItemCollection items2)
