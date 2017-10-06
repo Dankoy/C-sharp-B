@@ -32,6 +32,8 @@
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
+            this.dataSet11 = new OleDbDataAdapter_Usage.DataSet1();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbSelectCommand1
@@ -63,6 +65,11 @@
             this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=EVGENY-PC;Integrated Security=SSPI;Initial Catalog" +
     "=Mydb";
             // 
+            // dataSet11
+            // 
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -71,6 +78,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -81,6 +89,7 @@
         private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
         private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
         private System.Data.OleDb.OleDbConnection oleDbConnection1;
+        private DataSet1 dataSet11;
     }
 }
 
