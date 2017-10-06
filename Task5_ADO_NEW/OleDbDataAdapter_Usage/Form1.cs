@@ -28,6 +28,30 @@ namespace OleDbDataAdapter_Usage
             oleDbDataAdapter1.SelectCommand.Parameters[0].Value = par;
             this.dataSet11.Clear();
             oleDbDataAdapter1.Fill(this.dataSet11);
+
+            if(this.listBox1.SelectedIndex!=-1)
+            {
+                // Устанавливаем параметр для второго адаптера данных.
+                String s = this.listBox1.SelectedValue.ToString();
+                oleDbDataAdapter2.SelectCommand.Parameters[0].Value = Int32.Parse(s);
+                this.dataSet21.Clear();
+                oleDbDataAdapter2.Fill(dataSet21);
+            }
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(this.listBox1.SelectedIndex != -1)
+            {
+                if (this.listBox1.SelectedIndex != -1)
+                {
+                    String s = this.listBox1.SelectedValue.ToString();
+                    // MessageBox.Show(this.listBox1.SelectedValue.ToString());
+                    oleDbDataAdapter2.SelectCommand.Parameters[0].Value = Int32.Parse(s);
+                    this.dataSet21.Clear();
+                    oleDbDataAdapter2.Fill(dataSet21);
+                }
+            }
         }
     }
 }
