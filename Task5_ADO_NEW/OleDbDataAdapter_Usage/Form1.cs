@@ -19,7 +19,7 @@ namespace OleDbDataAdapter_Usage
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            oleDbDataAdapter1.Fill(this.dataSet11);
         }
     }
 }

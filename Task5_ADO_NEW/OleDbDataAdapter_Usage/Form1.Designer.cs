@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.dataSet11 = new OleDbDataAdapter_Usage.DataSet1();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // oleDbSelectCommand1
@@ -70,15 +74,33 @@
             this.dataSet11.DataSetName = "DataSet1";
             this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // listBox1
+            // 
+            this.listBox1.DataSource = this.dataSet11BindingSource;
+            this.listBox1.DisplayMember = "f2";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(244, 95);
+            this.listBox1.TabIndex = 0;
+            this.listBox1.ValueMember = "f1";
+            // 
+            // dataSet11BindingSource
+            // 
+            this.dataSet11BindingSource.DataMember = "Table_1";
+            this.dataSet11BindingSource.DataSource = this.dataSet11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(566, 376);
+            this.Controls.Add(this.listBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -90,6 +112,8 @@
         private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
         private System.Data.OleDb.OleDbConnection oleDbConnection1;
         private DataSet1 dataSet11;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.BindingSource dataSet11BindingSource;
     }
 }
 
