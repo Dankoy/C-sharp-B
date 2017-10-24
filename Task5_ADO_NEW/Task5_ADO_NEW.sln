@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.2_OleDBDataAdapter_Usage"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Reader", "3_Reader\3_Reader.csproj", "{19B1F640-76F1-4AB6-B500-C140CD0EDCC8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_Navigation", "4_Navigation\4_Navigation.csproj", "{2C2E3827-24D8-42DA-B074-6238B1D8E576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{19B1F640-76F1-4AB6-B500-C140CD0EDCC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19B1F640-76F1-4AB6-B500-C140CD0EDCC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19B1F640-76F1-4AB6-B500-C140CD0EDCC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C2E3827-24D8-42DA-B074-6238B1D8E576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C2E3827-24D8-42DA-B074-6238B1D8E576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C2E3827-24D8-42DA-B074-6238B1D8E576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C2E3827-24D8-42DA-B074-6238B1D8E576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
