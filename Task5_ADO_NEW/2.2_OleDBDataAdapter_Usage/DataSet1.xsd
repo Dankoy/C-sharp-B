@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Table_1" msprop:Generator_TableClassName="Table_1DataTable" msprop:Generator_TableVarName="tableTable_1" msprop:Generator_TablePropName="Table_1" msprop:Generator_RowDeletingName="Table_1RowDeleting" msprop:Generator_RowChangingName="Table_1RowChanging" msprop:Generator_RowEvHandlerName="Table_1RowChangeEventHandler" msprop:Generator_RowDeletedName="Table_1RowDeleted" msprop:Generator_UserTableName="Table_1" msprop:Generator_RowChangedName="Table_1RowChanged" msprop:Generator_RowEvArgName="Table_1RowChangeEvent" msprop:Generator_RowClassName="Table_1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="f1" msprop:Generator_ColumnVarNameInTable="columnf1" msprop:Generator_ColumnPropNameInRow="f1" msprop:Generator_ColumnPropNameInTable="f1Column" msprop:Generator_UserColumnName="f1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="f2" msprop:Generator_ColumnVarNameInTable="columnf2" msprop:Generator_ColumnPropNameInRow="f2" msprop:Generator_ColumnPropNameInTable="f2Column" msprop:Generator_UserColumnName="f2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="f3" msprop:Generator_ColumnVarNameInTable="columnf3" msprop:Generator_ColumnPropNameInRow="f3" msprop:Generator_ColumnPropNameInTable="f3Column" msprop:Generator_UserColumnName="f3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
