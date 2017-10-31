@@ -43,8 +43,8 @@
             this.oleDbDataAdapter2 = new System.Data.OleDb.OleDbDataAdapter();
             this.dataSet21 = new OleDbDataAdapter_Usage.DataSet2();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.table1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
@@ -62,7 +62,7 @@
             // 
             // oleDbConnection1
             // 
-            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=EVGENY-PC;Integrated Security=SSPI;Initial Catalog" +
+            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=localhost;Integrated Security=SSPI;Initial Catalog" +
     "=Mydb";
             // 
             // oleDbInsertCommand1
@@ -162,6 +162,11 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
             // 
+            // table1BindingSource
+            // 
+            this.table1BindingSource.DataMember = "Table_1";
+            this.table1BindingSource.DataSource = this.dataSet21;
+            // 
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource1, "f3", true));
@@ -169,11 +174,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 4;
-            // 
-            // table1BindingSource
-            // 
-            this.table1BindingSource.DataMember = "Table_1";
-            this.table1BindingSource.DataSource = this.dataSet21;
             // 
             // table1BindingSource1
             // 
