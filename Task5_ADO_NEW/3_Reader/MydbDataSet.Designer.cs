@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Task5_ADO_NEW {
+namespace _3_Reader {
     
     
     /// <summary>
@@ -20,9 +20,9 @@ namespace Task5_ADO_NEW {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("MydbDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("MydbDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class MydbDataSet1 : global::System.Data.DataSet {
+    public partial class MydbDataSet : global::System.Data.DataSet {
         
         private Table_1DataTable tableTable_1;
         
@@ -30,7 +30,7 @@ namespace Task5_ADO_NEW {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public MydbDataSet1() {
+        public MydbDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace Task5_ADO_NEW {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected MydbDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected MydbDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace Task5_ADO_NEW {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            MydbDataSet1 cln = ((MydbDataSet1)(base.Clone()));
+            MydbDataSet cln = ((MydbDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace Task5_ADO_NEW {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "MydbDataSet1";
+            this.DataSetName = "MydbDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/MydbDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/MydbDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableTable_1 = new Table_1DataTable();
@@ -225,7 +225,7 @@ namespace Task5_ADO_NEW {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            MydbDataSet1 ds = new MydbDataSet1();
+            MydbDataSet ds = new MydbDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -491,7 +491,7 @@ namespace Task5_ADO_NEW {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                MydbDataSet1 ds = new MydbDataSet1();
+                MydbDataSet ds = new MydbDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -684,7 +684,7 @@ namespace Task5_ADO_NEW {
         }
     }
 }
-namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
+namespace _3_Reader.MydbDataSetTableAdapters {
     
     
     /// <summary>
@@ -825,7 +825,7 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Task5_ADO_NEW.Properties.Settings.Default.MydbConnectionString;
+            this._connection.ConnectionString = global::_3_Reader.Properties.Settings.Default.UNI_MydbConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -842,7 +842,7 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(MydbDataSet1.Table_1DataTable dataTable) {
+        public virtual int Fill(MydbDataSet.Table_1DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -855,9 +855,9 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual MydbDataSet1.Table_1DataTable GetData() {
+        public virtual MydbDataSet.Table_1DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            MydbDataSet1.Table_1DataTable dataTable = new MydbDataSet1.Table_1DataTable();
+            MydbDataSet.Table_1DataTable dataTable = new MydbDataSet.Table_1DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -865,14 +865,14 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(MydbDataSet1.Table_1DataTable dataTable) {
+        public virtual int Update(MydbDataSet.Table_1DataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(MydbDataSet1 dataSet) {
+        public virtual int Update(MydbDataSet dataSet) {
             return this.Adapter.Update(dataSet, "Table_1");
         }
         
@@ -1022,7 +1022,7 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(MydbDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(MydbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._table_1TableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Table_1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1041,7 +1041,7 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(MydbDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(MydbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._table_1TableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Table_1.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1059,7 +1059,7 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(MydbDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(MydbDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._table_1TableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Table_1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1101,7 +1101,7 @@ namespace Task5_ADO_NEW.MydbDataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(MydbDataSet1 dataSet) {
+        public virtual int UpdateAll(MydbDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

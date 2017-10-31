@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1_Showing data", "Task5_ADO_NEW\1_Showing data.csproj", "{88F75BF1-E4E7-4E87-B159-54F707B33CF9}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Reader", "3_Reader\3_Reader.csproj", "{19B1F640-76F1-4AB6-B500-C140CD0EDCC8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_Navigation", "4_Navigation\4_Navigation.csproj", "{2C2E3827-24D8-42DA-B074-6238B1D8E576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_Reader_UNI", "3_Reader_UNI\3_Reader_UNI.csproj", "{B67DBE39-19FB-4A64-8561-C1BCF77479EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2C2E3827-24D8-42DA-B074-6238B1D8E576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C2E3827-24D8-42DA-B074-6238B1D8E576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C2E3827-24D8-42DA-B074-6238B1D8E576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B67DBE39-19FB-4A64-8561-C1BCF77479EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67DBE39-19FB-4A64-8561-C1BCF77479EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67DBE39-19FB-4A64-8561-C1BCF77479EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67DBE39-19FB-4A64-8561-C1BCF77479EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
