@@ -50,5 +50,37 @@ namespace _2_WindowsFormsAppOffice
             user = System.Security.Principal.WindowsIdentity.GetCurrent();
             excelApp.Range["E1"].Value = user.Name;
         }
+
+        public void Display(IEnumerable<Price> accounts, Action<Price, Excel.Range> DisplayFunc)
+        {
+            excelApp.Cells[2, 1].Select();
+            foreach (var ac in accounts)
+            {
+                DisplayFunc(ac, excelApp.ActiveCell);
+                excelApp.ActiveCell.Offset[1, 0].Select();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var Accounts = new List<Price>
+            {
+                new Price {ID = 100, Val = 123.25 },
+                new Price {ID = 200, Val = -155.65}
+            };
+
+            Display(Accounts, (account, cell) =>
+            {
+                // многострочная лямбда определяет правило отображения значений
+                cell.Value = account.ID;
+                cell.Offset[0, 1].Value = account.Val;
+
+                if (account.Val < 0)
+                {
+                    cell.Interior.Color = 255;
+                    cell.Offset[0, 1].Interior.Color = 255;
+                }
+            });
+        }
     }
 }
