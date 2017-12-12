@@ -10,14 +10,11 @@
 <body>
     <form id="form1" runat="server">
         <div>
-        </div>
-        <p>
-            &nbsp;</p>
-        <p>
             <asp:textbox ID ="TextBox1" runat="server"></asp:textbox>
             <asp:button ID="Button1" runat="server" text="Button" OnClick="OnClick" />
-        </p>
+        </div>
     </form>
+    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
 </body>
 </html>
 
