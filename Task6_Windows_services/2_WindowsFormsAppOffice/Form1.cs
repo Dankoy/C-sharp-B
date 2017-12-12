@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Excel = Microsoft.Office.Interop.Excel;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace _2_WindowsFormsAppOffice
 {
@@ -81,6 +82,15 @@ namespace _2_WindowsFormsAppOffice
                     cell.Offset[0, 1].Interior.Color = 255;
                 }
             });
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            excelApp.Range["A1:B3"].Copy();
+            var word = new Word.Application();
+            word.Visible = true;
+            word.Documents.Add();
+            word.Selection.PasteSpecial(Link: true, DisplayAsIcon: true);
         }
     }
 }
