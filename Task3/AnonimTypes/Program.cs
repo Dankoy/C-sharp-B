@@ -58,9 +58,11 @@ namespace AnonimTypes
             A objA = new A();
             A objB = new A();
             Console.WriteLine("Comparing using \"Equals\": " + objA.Equals(objB));
-            Console.WriteLine("Comparing using \"==\": " + (objA == objB));
+            Console.WriteLine("Comparing using overloaded \"==\": " + (objA == objB));
         }
     }
+
+    //Перегрузка операторов
     class A
     {
         int x = 0;
@@ -68,7 +70,7 @@ namespace AnonimTypes
         int z = 0;
 
         //Overloading ==
-        public static bool operator ==(A a, A b)
+     /*   public static bool operator ==(A a, A b)
         {
             // If both objects are "null" or both of them are the same instance => true
             if (System.Object.ReferenceEquals(a, b))
@@ -90,5 +92,6 @@ namespace AnonimTypes
         {
             return !(a == b);
         }
+        */
     }
 }

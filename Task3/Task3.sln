@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-AbstractClasses", "AbstractClasses\1-AbstractClasses.csproj", "{4AFE6241-647C-4DF5-A72A-4E96CD46E974}"
 EndProject
@@ -18,6 +18,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7-ExternalAssemblyReflector", "ExternalAssemblyReflector\7-ExternalAssemblyReflector.csproj", "{633F0268-78EE-46F6-9CBE-28EFB08987D3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-LateBinding", "LateBinding\8-LateBinding.csproj", "{639654A3-86D3-415D-B8A1-700CD0CA636C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CA72F8F5-799C-4439-9E99-4F8292B51A17} = {CA72F8F5-799C-4439-9E99-4F8292B51A17}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLibrary", "CarLibrary\CarLibrary.csproj", "{CA72F8F5-799C-4439-9E99-4F8292B51A17}"
 EndProject
@@ -66,5 +69,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC9B585A-47A8-4F93-A275-8D8287696262}
 	EndGlobalSection
 EndGlobal

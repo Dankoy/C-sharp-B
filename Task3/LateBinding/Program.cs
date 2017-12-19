@@ -29,9 +29,12 @@ namespace LateBinding
             
             // Asking a type of Car2 from Assembly
             Type car = a.GetType("CarLibrary.Car2");
+            Type car1 = a.GetType("CarLibrary.Car1");
 
             // Creating an object Car2 on the go (using Activator class)
             object obj = Activator.CreateInstance(car);
+
+            object obj1 = Activator.CreateInstance(car1);
 
             //Asking info about next method 
             MethodInfo mi = car.GetMethod("Turbo");
@@ -41,7 +44,7 @@ namespace LateBinding
 
             //Create array of params
             object[] paramArray = new object[2];
-            paramArray[0] = "Fred";
+            paramArray[0] = "2323";
             paramArray[1] = 4;
             mi = car.GetMethod("BeQuiet");
 
