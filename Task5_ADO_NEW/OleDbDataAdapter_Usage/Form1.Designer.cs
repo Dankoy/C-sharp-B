@@ -58,7 +58,7 @@
             this.oleDbSelectCommand1.CommandText = "SELECT        f1, f2, f3\r\nFROM            Table_1\r\nWHERE        (f1 >= ?)";
             this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
             this.oleDbSelectCommand1.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
-            new System.Data.OleDb.OleDbParameter("Parameter1", System.Data.OleDb.OleDbType.Numeric)});
+            new System.Data.OleDb.OleDbParameter("f1", System.Data.OleDb.OleDbType.WChar, 10, "f1")});
             // 
             // oleDbConnection1
             // 
@@ -71,7 +71,7 @@
             this.oleDbInsertCommand1.Connection = this.oleDbConnection1;
             this.oleDbInsertCommand1.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
             new System.Data.OleDb.OleDbParameter("f1", System.Data.OleDb.OleDbType.WChar, 0, "f1"),
-            new System.Data.OleDb.OleDbParameter("f2", System.Data.OleDb.OleDbType.WChar, 0, "f2"),
+            new System.Data.OleDb.OleDbParameter("f2", System.Data.OleDb.OleDbType.Numeric, 0, System.Data.ParameterDirection.Input, false, ((byte)(18)), ((byte)(0)), "f2", System.Data.DataRowVersion.Current, null),
             new System.Data.OleDb.OleDbParameter("f3", System.Data.OleDb.OleDbType.WChar, 0, "f3")});
             // 
             // oleDbDataAdapter1

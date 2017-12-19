@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
+            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
-            this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.dataSet11 = new _2._2_OleDBDataAdapter_Usage.DataSet1();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.dataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -43,8 +43,8 @@
             this.oleDbDataAdapter2 = new System.Data.OleDb.OleDbDataAdapter();
             this.dataSet21 = new _2._2_OleDBDataAdapter_Usage.DataSet2();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet21)).BeginInit();
@@ -56,7 +56,12 @@
             this.oleDbSelectCommand1.CommandText = "SELECT        f1, f2, f3\r\nFROM            Table_1\r\nWHERE        (f1 >= ?)";
             this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
             this.oleDbSelectCommand1.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
-            new System.Data.OleDb.OleDbParameter("Parameter1", System.Data.OleDb.OleDbType.Numeric)});
+            new System.Data.OleDb.OleDbParameter("f1", System.Data.OleDb.OleDbType.WChar, 10, "f1")});
+            // 
+            // oleDbConnection1
+            // 
+            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=localhost;Integrated Security=SSPI;Initial Catalog" +
+    "=MyDB";
             // 
             // oleDbInsertCommand1
             // 
@@ -64,7 +69,7 @@
             this.oleDbInsertCommand1.Connection = this.oleDbConnection1;
             this.oleDbInsertCommand1.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
             new System.Data.OleDb.OleDbParameter("f1", System.Data.OleDb.OleDbType.WChar, 0, "f1"),
-            new System.Data.OleDb.OleDbParameter("f2", System.Data.OleDb.OleDbType.WChar, 0, "f2"),
+            new System.Data.OleDb.OleDbParameter("f2", System.Data.OleDb.OleDbType.Numeric, 0, System.Data.ParameterDirection.Input, false, ((byte)(18)), ((byte)(0)), "f2", System.Data.DataRowVersion.Current, null),
             new System.Data.OleDb.OleDbParameter("f3", System.Data.OleDb.OleDbType.WChar, 0, "f3")});
             // 
             // oleDbDataAdapter1
@@ -76,11 +81,6 @@
                         new System.Data.Common.DataColumnMapping("f1", "f1"),
                         new System.Data.Common.DataColumnMapping("f2", "f2"),
                         new System.Data.Common.DataColumnMapping("f3", "f3")})});
-            // 
-            // oleDbConnection1
-            // 
-            this.oleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=EVGENY-PC;Integrated Security=SSPI;Initial Catalog" +
-    "=Mydb";
             // 
             // dataSet11
             // 
@@ -160,6 +160,11 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
             // 
+            // table1BindingSource
+            // 
+            this.table1BindingSource.DataMember = "Table_1";
+            this.table1BindingSource.DataSource = this.dataSet21;
+            // 
             // textBox3
             // 
             this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "f3", true));
@@ -167,11 +172,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 4;
-            // 
-            // table1BindingSource
-            // 
-            this.table1BindingSource.DataMember = "Table_1";
-            this.table1BindingSource.DataSource = this.dataSet21;
             // 
             // Form1
             // 
